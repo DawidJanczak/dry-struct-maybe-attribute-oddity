@@ -30,6 +30,6 @@ puts t3_attribbute: t3.missing # None
 puts t3_attribute_class: t3.missing.class # None
 
 # Call to_json
-puts t1.to_json
-puts t2.to_json
-puts t3.to_json
+puts t1.to_json # {"missing":{"value":"Not really"}}
+puts t2.to_json # {"missing":{}}
+puts t3.to_json # "missing":{"trace":"<snip>/ruby/gems/2.7.0/gems/dry-types-1.5.0/lib/dry/types/extensions/maybe.rb:29:in `call_unsafe'"}}
